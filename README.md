@@ -81,4 +81,4 @@ the Jenkinsfile is well commented,
 - Run unit test with junit against it
 - scan the image for security issues, if critical or High Vulnerabilities the pipeline fail
 - Push the image to dockerhub registry 
-- send a email notification with the Build result
+- send a email notification with the Build result# hello-world
