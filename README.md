@@ -18,8 +18,10 @@ Request: Get /hello/<username>
 Response: 200 OK 
 
 Response Examples: 
-A. If username's birthday is in N days: { "message": "Hello, <username>! Your birthday is in N day(s)" } 
-B. If username's birthday is today: { "message": "Hello, <username>! Happy birthday!" } 
+A. If username's birthday is in N days: 
+            { "message": "Hello, <username>! Your birthday is in N day(s)" } 
+B. If username's birthday is today: 
+            { "message": "Hello, <username>! Happy birthday!" } 
 
 Note: Use storage/database of your choice. The code should have at least one unit test. 
 ```
@@ -37,9 +39,11 @@ Note: Use storage/database of your choice. The code should have at least one uni
 ```bash
 docker run -d -p 8081:8080 --name python-test abdessamii/user-py:${versionTag}
 # exemple docker run -d -p 8081:8080 --name python-test  abdessamii/user-py:0.1.2
-# see if the Hello world application works [http://localhost:8081/hello/Charlie](http://localhost:8081/hello/Charlie)
+# see if the Hello world application works :
+      [http://localhost:8081/hello/Charlie](http://localhost:8081/hello/Charlie)
 
 ```
+![web](https://user-images.githubusercontent.com/44443358/141701549-e58d0d6c-182d-4f99-935e-dda6ed23c5b4.png)
 
 ## How to run and test locally
 
@@ -47,11 +51,11 @@ docker run -d -p 8081:8080 --name python-test abdessamii/user-py:${versionTag}
 - Run test without logging ```pytest -q``` 
 - Run test without logging ```pytest -q -c pytest_logs.ini``` 
 
-<img src="/home/abdessamii/Desktop/test.png">
+![image](https://user-images.githubusercontent.com/44443358/141701581-bc678c19-df82-45bf-8418-e7a4a45dbce5.png)
+
 
 You may test server manually, following link [http://localhost:8080/hello/Charlie](http://localhost:8080/hello/Charlie)
 
-<img src="/home/abdessamii/Desktop/web.png">
 
 ## Prerequisites
 ```bash
